@@ -302,3 +302,464 @@ Started GET "/sdfdsf/search?query=haha&commit=Search" for ::1 at 2023-01-30 18:1
   
 ActionController::RoutingError (No route matches [GET] "/sdfdsf/search"):
   
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssues (20230202234938)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "issues" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230202234938"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-02-02 23:54:08.365640"], ["updated_at", "2023-02-02 23:54:08.365640"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssues (20230202234938)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mDROP TABLE "issues"[0m
+  [1m[36mActiveRecord::SchemaMigration Delete All (0.2ms)[0m  [1m[31mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = ?[0m  [["version", "20230202234938"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateIssues (20230202234938)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "issues" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "content" text, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230202234938"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.6ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "SEMO DEVS"], ["content", "1st of every wednesday"], ["created_at", "2023-02-03 00:00:19.215965"], ["updated_at", "2023-02-03 00:00:19.215965"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", nil], ["content", nil], ["created_at", "2023-02-03 00:02:03.558052"], ["updated_at", "2023-02-03 00:02:03.558052"]]
+  [1m[36mTRANSACTION (1.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIssue Load (0.2ms)[0m  [1m[34mSELECT "issues".* FROM "issues" ORDER BY "issues"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Destroy (0.3ms)[0m  [1m[31mDELETE FROM "issues" WHERE "issues"."id" = ?[0m  [["id", 2]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ea facilis qui vel."], ["content", "Sit animi corporis. Aut minima in. Sint officiis sit."], ["created_at", "2023-02-03 00:07:27.211673"], ["updated_at", "2023-02-03 00:07:27.211673"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptates consequuntur minima dolores."], ["content", "Earum ullam incidunt. Ea cumque cum. Eaque cumque rem."], ["created_at", "2023-02-03 00:07:27.217146"], ["updated_at", "2023-02-03 00:07:27.217146"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut nam rerum unde."], ["content", "Minima hic porro. Est nostrum voluptatibus. Ut ab unde."], ["created_at", "2023-02-03 00:07:27.221017"], ["updated_at", "2023-02-03 00:07:27.221017"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Consequatur temporibus incidunt sit."], ["content", "Sit quo voluptas. Facere quia est. Nihil cupiditate et."], ["created_at", "2023-02-03 00:07:27.224681"], ["updated_at", "2023-02-03 00:07:27.224681"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "At quibusdam neque molestiae."], ["content", "Occaecati qui fugiat. Ut exercitationem vero. Quibusdam hic quasi."], ["created_at", "2023-02-03 00:07:27.228456"], ["updated_at", "2023-02-03 00:07:27.228456"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia nihil similique occaecati."], ["content", "Cum dolorum animi. Odio consectetur quia. Qui quae accusantium."], ["created_at", "2023-02-03 00:07:27.232161"], ["updated_at", "2023-02-03 00:07:27.232161"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Omnis repellat tempore quae."], ["content", "Quia sit est. Provident omnis non. Earum sit sint."], ["created_at", "2023-02-03 00:07:27.235594"], ["updated_at", "2023-02-03 00:07:27.235594"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Veniam et fugit sed."], ["content", "Recusandae nam et. Hic eligendi blanditiis. Maiores rem porro."], ["created_at", "2023-02-03 00:07:27.239348"], ["updated_at", "2023-02-03 00:07:27.239348"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Temporibus sit autem vitae."], ["content", "Aut optio voluptatibus. Quaerat ex enim. Iusto optio sequi."], ["created_at", "2023-02-03 00:07:27.243100"], ["updated_at", "2023-02-03 00:07:27.243100"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Exercitationem eius ea quia."], ["content", "Et sed rerum. Tempora sit aspernatur. Adipisci ut reprehenderit."], ["created_at", "2023-02-03 00:07:27.246651"], ["updated_at", "2023-02-03 00:07:27.246651"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptates exercitationem iusto facilis."], ["content", "Dolore sed vel. Id non sint. Aut consequatur distinctio."], ["created_at", "2023-02-03 00:07:27.250816"], ["updated_at", "2023-02-03 00:07:27.250816"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dolorum corporis doloribus est."], ["content", "Optio accusantium neque. Perferendis aut quidem. Ut culpa repellendus."], ["created_at", "2023-02-03 00:07:27.254990"], ["updated_at", "2023-02-03 00:07:27.254990"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut expedita itaque est."], ["content", "Placeat accusamus eos. Fugiat laboriosam quia. Quas accusamus cum."], ["created_at", "2023-02-03 00:07:27.258819"], ["updated_at", "2023-02-03 00:07:27.258819"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatem et quia voluptas."], ["content", "Eum sit pariatur. Magni vero ab. Amet et non."], ["created_at", "2023-02-03 00:07:27.262620"], ["updated_at", "2023-02-03 00:07:27.262620"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et commodi quisquam voluptas."], ["content", "Sequi nobis quo. Incidunt deleniti non. Quam quaerat perspiciatis."], ["created_at", "2023-02-03 00:07:27.266273"], ["updated_at", "2023-02-03 00:07:27.266273"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doloribus molestiae eos sequi."], ["content", "Ipsa aliquid officia. Dolores magni sit. Nesciunt fugit iusto."], ["created_at", "2023-02-03 00:07:27.269658"], ["updated_at", "2023-02-03 00:07:27.269658"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut et at aut."], ["content", "Ea officiis eum. Temporibus vitae minus. Illum voluptatem soluta."], ["created_at", "2023-02-03 00:07:27.273099"], ["updated_at", "2023-02-03 00:07:27.273099"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nostrum est optio ut."], ["content", "Quod laborum est. Et et aut. Ullam dolores nostrum."], ["created_at", "2023-02-03 00:07:27.276486"], ["updated_at", "2023-02-03 00:07:27.276486"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia excepturi suscipit aut."], ["content", "Natus eaque eius. Et autem corporis. Nemo cumque praesentium."], ["created_at", "2023-02-03 00:07:27.279857"], ["updated_at", "2023-02-03 00:07:27.279857"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut neque quam dicta."], ["content", "Sunt sint et. Corrupti mollitia maiores. Qui quaerat beatae."], ["created_at", "2023-02-03 00:07:27.283322"], ["updated_at", "2023-02-03 00:07:27.283322"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dolore quis sequi dolorem."], ["content", "Dolorem nostrum eius. Commodi qui tempora. Voluptas mollitia sit."], ["created_at", "2023-02-03 00:07:27.286961"], ["updated_at", "2023-02-03 00:07:27.286961"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut aut dignissimos impedit."], ["content", "Est debitis distinctio. Incidunt reprehenderit nihil. Ut optio beatae."], ["created_at", "2023-02-03 00:07:27.290262"], ["updated_at", "2023-02-03 00:07:27.290262"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptates aperiam sint cum."], ["content", "Voluptate numquam sed. Sint molestias voluptatem. Inventore eligendi culpa."], ["created_at", "2023-02-03 00:07:27.293660"], ["updated_at", "2023-02-03 00:07:27.293660"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Maiores totam sit sit."], ["content", "Eligendi aut vitae. Aut assumenda explicabo. Non iste aliquid."], ["created_at", "2023-02-03 00:07:27.296910"], ["updated_at", "2023-02-03 00:07:27.296910"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quis minima minus fuga."], ["content", "Maxime commodi eaque. Qui voluptatem accusantium. Quas dolorem repudiandae."], ["created_at", "2023-02-03 00:07:27.299991"], ["updated_at", "2023-02-03 00:07:27.299991"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officiis aliquid totam corrupti."], ["content", "Aspernatur totam aut. Qui odit voluptate. Enim qui consequatur."], ["created_at", "2023-02-03 00:07:27.303659"], ["updated_at", "2023-02-03 00:07:27.303659"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Magnam illum suscipit molestiae."], ["content", "Possimus autem voluptatem. Sed officiis asperiores. Id voluptatem sapiente."], ["created_at", "2023-02-03 00:07:27.307031"], ["updated_at", "2023-02-03 00:07:27.307031"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sit aut aut quibusdam."], ["content", "Ut nemo assumenda. Qui quia ut. Omnis quia rerum."], ["created_at", "2023-02-03 00:07:27.310487"], ["updated_at", "2023-02-03 00:07:27.310487"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptates at molestiae in."], ["content", "Et necessitatibus est. Enim et quia. A reiciendis perspiciatis."], ["created_at", "2023-02-03 00:07:27.314061"], ["updated_at", "2023-02-03 00:07:27.314061"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et voluptas quia neque."], ["content", "Excepturi vel veniam. Sit ducimus sint. Non maxime quia."], ["created_at", "2023-02-03 00:07:27.319056"], ["updated_at", "2023-02-03 00:07:27.319056"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ut dolore et autem."], ["content", "Totam similique et. Corrupti similique quis. Animi ipsa error."], ["created_at", "2023-02-03 00:07:27.323046"], ["updated_at", "2023-02-03 00:07:27.323046"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dignissimos qui nobis quas."], ["content", "Incidunt omnis voluptas. Et maiores repellat. Sunt voluptatem sed."], ["created_at", "2023-02-03 00:07:27.327065"], ["updated_at", "2023-02-03 00:07:27.327065"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptas assumenda voluptas tempora."], ["content", "Autem molestiae quod. Quia et tenetur. Vitae culpa sunt."], ["created_at", "2023-02-03 00:07:27.330628"], ["updated_at", "2023-02-03 00:07:27.330628"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "At voluptas rerum molestiae."], ["content", "Ab molestias pariatur. Quasi voluptas assumenda. Sunt laboriosam ea."], ["created_at", "2023-02-03 00:07:27.334016"], ["updated_at", "2023-02-03 00:07:27.334016"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptas harum nesciunt sit."], ["content", "Eos illum inventore. Consequatur ipsum veniam. Occaecati expedita id."], ["created_at", "2023-02-03 00:07:27.337493"], ["updated_at", "2023-02-03 00:07:27.337493"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Vero voluptatibus quas officia."], ["content", "Officia neque error. Nulla sit ex. Officia tempore reiciendis."], ["created_at", "2023-02-03 00:07:27.341034"], ["updated_at", "2023-02-03 00:07:27.341034"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nam corrupti alias tempore."], ["content", "Possimus asperiores a. Debitis neque aliquid. Eum dolorem eos."], ["created_at", "2023-02-03 00:07:27.344232"], ["updated_at", "2023-02-03 00:07:27.344232"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Illum delectus enim consequatur."], ["content", "Et repellat sunt. Non molestiae aut. Non ipsum quae."], ["created_at", "2023-02-03 00:07:27.347692"], ["updated_at", "2023-02-03 00:07:27.347692"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Soluta nesciunt odit et."], ["content", "Voluptas sint et. Eos quisquam ad. Fugit autem sunt."], ["created_at", "2023-02-03 00:07:27.350980"], ["updated_at", "2023-02-03 00:07:27.350980"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Fuga voluptas sed asperiores."], ["content", "Possimus qui amet. Voluptatem eum nostrum. Cum repellendus libero."], ["created_at", "2023-02-03 00:07:27.354139"], ["updated_at", "2023-02-03 00:07:27.354139"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officiis hic quisquam exercitationem."], ["content", "Accusantium mollitia eveniet. At qui ut. Debitis porro repellat."], ["created_at", "2023-02-03 00:07:27.357268"], ["updated_at", "2023-02-03 00:07:27.357268"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed sit ullam voluptate."], ["content", "Ea dolor sunt. Tempora tenetur est. Sed id voluptatem."], ["created_at", "2023-02-03 00:07:27.360675"], ["updated_at", "2023-02-03 00:07:27.360675"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Officia ab est eius."], ["content", "Qui recusandae non. Voluptas qui facere. Dolores distinctio reprehenderit."], ["created_at", "2023-02-03 00:07:27.364095"], ["updated_at", "2023-02-03 00:07:27.364095"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Totam ad facere beatae."], ["content", "Quam tempora consequatur. Aperiam aliquam consequatur. Suscipit amet alias."], ["created_at", "2023-02-03 00:07:27.367253"], ["updated_at", "2023-02-03 00:07:27.367253"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Culpa voluptas alias saepe."], ["content", "Aut consequatur facere. Labore eius expedita. Et laborum architecto."], ["created_at", "2023-02-03 00:07:27.370431"], ["updated_at", "2023-02-03 00:07:27.370431"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nam quis error autem."], ["content", "Rerum pariatur consequatur. Reiciendis ad dolore. Voluptas quo eveniet."], ["created_at", "2023-02-03 00:07:27.373608"], ["updated_at", "2023-02-03 00:07:27.373608"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Impedit quos animi vero."], ["content", "Ipsa praesentium eaque. Voluptas adipisci dignissimos. Repudiandae rerum minus."], ["created_at", "2023-02-03 00:07:27.376809"], ["updated_at", "2023-02-03 00:07:27.376809"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aliquam cupiditate molestiae deleniti."], ["content", "Vero ad voluptas. Natus est quas. Alias expedita recusandae."], ["created_at", "2023-02-03 00:07:27.379934"], ["updated_at", "2023-02-03 00:07:27.379934"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed quo totam est."], ["content", "Vitae laboriosam ut. Praesentium earum sed. Qui vel dolorem."], ["created_at", "2023-02-03 00:07:27.383161"], ["updated_at", "2023-02-03 00:07:27.383161"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Voluptatem et velit rem."], ["content", "Corporis ut officia. Et recusandae voluptate. Voluptatem similique architecto."], ["created_at", "2023-02-03 00:07:27.386555"], ["updated_at", "2023-02-03 00:07:27.386555"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Cum eum nulla sed."], ["content", "Impedit voluptatem esse. Qui assumenda culpa. Occaecati dignissimos saepe."], ["created_at", "2023-02-03 00:07:27.389707"], ["updated_at", "2023-02-03 00:07:27.389707"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia voluptates porro qui."], ["content", "Sint quo et. Molestias dolor enim. Et similique et."], ["created_at", "2023-02-03 00:07:27.392939"], ["updated_at", "2023-02-03 00:07:27.392939"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ut exercitationem non nihil."], ["content", "Odio ratione velit. Reiciendis asperiores totam. Voluptatem labore eaque."], ["created_at", "2023-02-03 00:07:27.396318"], ["updated_at", "2023-02-03 00:07:27.396318"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ex delectus qui fugit."], ["content", "Qui ut laborum. Earum dolorem repellat. Ipsam est qui."], ["created_at", "2023-02-03 00:07:27.399698"], ["updated_at", "2023-02-03 00:07:27.399698"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et maxime nihil ut."], ["content", "Perspiciatis impedit optio. Et sunt accusantium. Vero quaerat quam."], ["created_at", "2023-02-03 00:07:27.403085"], ["updated_at", "2023-02-03 00:07:27.403085"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ullam rerum exercitationem ad."], ["content", "Quod ipsam voluptate. Consequatur distinctio assumenda. Id odit quo."], ["created_at", "2023-02-03 00:07:27.406738"], ["updated_at", "2023-02-03 00:07:27.406738"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Illo autem aut ut."], ["content", "Ad beatae ipsam. Enim eos dolorem. Dignissimos sit officiis."], ["created_at", "2023-02-03 00:07:27.411013"], ["updated_at", "2023-02-03 00:07:27.411013"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed sint est dolor."], ["content", "Voluptatem est et. Ut minus dolor. Sit quo amet."], ["created_at", "2023-02-03 00:07:27.415062"], ["updated_at", "2023-02-03 00:07:27.415062"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Praesentium maxime consequatur nihil."], ["content", "Consequatur numquam consequatur. Numquam optio et. Et porro dolor."], ["created_at", "2023-02-03 00:07:27.418758"], ["updated_at", "2023-02-03 00:07:27.418758"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sequi sit et ducimus."], ["content", "Et earum dolor. Aut earum itaque. Non totam et."], ["created_at", "2023-02-03 00:07:27.422396"], ["updated_at", "2023-02-03 00:07:27.422396"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quisquam dolorem porro qui."], ["content", "Esse provident nulla. Pariatur incidunt commodi. Occaecati voluptatibus autem."], ["created_at", "2023-02-03 00:07:27.425996"], ["updated_at", "2023-02-03 00:07:27.425996"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Pariatur quae quia autem."], ["content", "Sint aliquam hic. Quaerat consequatur aut. Quisquam occaecati dignissimos."], ["created_at", "2023-02-03 00:07:27.429632"], ["updated_at", "2023-02-03 00:07:27.429632"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quos est consequatur perferendis."], ["content", "Et illum consequatur. Eius asperiores fuga. Ut dolor porro."], ["created_at", "2023-02-03 00:07:27.441401"], ["updated_at", "2023-02-03 00:07:27.441401"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Qui sint doloremque deserunt."], ["content", "Iure rerum aperiam. Exercitationem nihil omnis. Et voluptates aut."], ["created_at", "2023-02-03 00:07:27.445084"], ["updated_at", "2023-02-03 00:07:27.445084"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Deserunt magni sit fugiat."], ["content", "Iste illum voluptate. Expedita ex est. Quos voluptatem aliquam."], ["created_at", "2023-02-03 00:07:27.448832"], ["updated_at", "2023-02-03 00:07:27.448832"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Accusamus nemo deleniti ea."], ["content", "Expedita est qui. Ducimus mollitia nemo. Magnam a dolores."], ["created_at", "2023-02-03 00:07:27.452232"], ["updated_at", "2023-02-03 00:07:27.452232"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Reiciendis eveniet rem ea."], ["content", "Fugit excepturi at. Aperiam omnis repellendus. Earum ipsam adipisci."], ["created_at", "2023-02-03 00:07:27.455600"], ["updated_at", "2023-02-03 00:07:27.455600"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Modi voluptatem quasi eveniet."], ["content", "Rerum sit est. Dolorum deleniti inventore. In aut quibusdam."], ["created_at", "2023-02-03 00:07:27.458897"], ["updated_at", "2023-02-03 00:07:27.458897"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Delectus et suscipit quia."], ["content", "Dicta magnam ut. Incidunt rerum accusamus. Et qui facere."], ["created_at", "2023-02-03 00:07:27.462287"], ["updated_at", "2023-02-03 00:07:27.462287"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Modi officia et sunt."], ["content", "Ad eum iusto. Aut officia sint. Sint enim maxime."], ["created_at", "2023-02-03 00:07:27.465749"], ["updated_at", "2023-02-03 00:07:27.465749"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Odit ex voluptas porro."], ["content", "Est et recusandae. Officiis temporibus quia. Voluptas delectus at."], ["created_at", "2023-02-03 00:07:27.469254"], ["updated_at", "2023-02-03 00:07:27.469254"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Doloribus voluptatem praesentium totam."], ["content", "Aut molestiae dolores. Quia possimus asperiores. Eveniet ipsam et."], ["created_at", "2023-02-03 00:07:27.472264"], ["updated_at", "2023-02-03 00:07:27.472264"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Ipsam laborum quidem ducimus."], ["content", "Voluptate et consequatur. Facere adipisci tenetur. Laudantium rerum voluptatem."], ["created_at", "2023-02-03 00:07:27.475076"], ["updated_at", "2023-02-03 00:07:27.475076"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Maiores maxime sunt ut."], ["content", "Id consectetur quia. Labore culpa libero. Similique quia tempora."], ["created_at", "2023-02-03 00:07:27.478494"], ["updated_at", "2023-02-03 00:07:27.478494"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Consectetur quos minima maxime."], ["content", "Sint ab omnis. Quia eveniet quis. Aut cupiditate non."], ["created_at", "2023-02-03 00:07:27.481323"], ["updated_at", "2023-02-03 00:07:27.481323"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.4ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Nesciunt veritatis ut facilis."], ["content", "Tenetur hic quis. Quos dignissimos praesentium. A natus adipisci."], ["created_at", "2023-02-03 00:07:27.484224"], ["updated_at", "2023-02-03 00:07:27.484224"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dolor nostrum sunt voluptatem."], ["content", "Deserunt cum aliquid. Nostrum sunt sed. Sit provident molestias."], ["created_at", "2023-02-03 00:07:27.487250"], ["updated_at", "2023-02-03 00:07:27.487250"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Distinctio sequi ut eum."], ["content", "Ab iste illo. Sed aspernatur quos. Aliquid unde nemo."], ["created_at", "2023-02-03 00:07:27.490197"], ["updated_at", "2023-02-03 00:07:27.490197"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Aut sint et eligendi."], ["content", "Maxime velit aut. Nihil sed libero. Nisi voluptatem molestias."], ["created_at", "2023-02-03 00:07:27.492923"], ["updated_at", "2023-02-03 00:07:27.492923"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Totam similique tempora vel."], ["content", "Ducimus pariatur et. Inventore qui animi. Quaerat dolorum impedit."], ["created_at", "2023-02-03 00:07:27.496145"], ["updated_at", "2023-02-03 00:07:27.496145"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia quam amet optio."], ["content", "Aperiam perspiciatis aut. Maiores voluptatem et. Ut molestias tenetur."], ["created_at", "2023-02-03 00:07:27.499378"], ["updated_at", "2023-02-03 00:07:27.499378"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Suscipit error saepe perferendis."], ["content", "Quibusdam facere et. Earum voluptatum officiis. Libero eos dolor."], ["created_at", "2023-02-03 00:07:27.502111"], ["updated_at", "2023-02-03 00:07:27.502111"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Consequatur consectetur voluptas voluptate."], ["content", "Occaecati ab voluptatem. Nulla dolor quia. Alias quia ipsam."], ["created_at", "2023-02-03 00:07:27.504980"], ["updated_at", "2023-02-03 00:07:27.504980"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Dolor quia vitae maiores."], ["content", "Beatae ipsa quae. Beatae veritatis suscipit. Officia eos deleniti."], ["created_at", "2023-02-03 00:07:27.507689"], ["updated_at", "2023-02-03 00:07:27.507689"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et nostrum rerum veritatis."], ["content", "Exercitationem iure voluptas. Sit quia repellat. Magnam sunt aut."], ["created_at", "2023-02-03 00:07:27.510691"], ["updated_at", "2023-02-03 00:07:27.510691"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Perferendis quia dolores voluptatem."], ["content", "Nesciunt minus aliquid. Voluptas iure facere. Ut nobis omnis."], ["created_at", "2023-02-03 00:07:27.513467"], ["updated_at", "2023-02-03 00:07:27.513467"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Et laborum similique quaerat."], ["content", "Ad atque perferendis. Harum dolore non. Consectetur eius quam."], ["created_at", "2023-02-03 00:07:27.516293"], ["updated_at", "2023-02-03 00:07:27.516293"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed nemo est facilis."], ["content", "Et maxime animi. Exercitationem rerum rem. Dolores quis recusandae."], ["created_at", "2023-02-03 00:07:27.519208"], ["updated_at", "2023-02-03 00:07:27.519208"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.5ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Laboriosam sed voluptatem commodi."], ["content", "Aperiam officiis voluptatum. Exercitationem suscipit est. Ut esse aspernatur."], ["created_at", "2023-02-03 00:07:27.522837"], ["updated_at", "2023-02-03 00:07:27.522837"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sed ratione laborum minus."], ["content", "Qui et provident. Voluptatem similique libero. Enim voluptates ut."], ["created_at", "2023-02-03 00:07:27.527330"], ["updated_at", "2023-02-03 00:07:27.527330"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Neque unde et ullam."], ["content", "Voluptatem ipsum quasi. Nihil neque odio. Et exercitationem in."], ["created_at", "2023-02-03 00:07:27.530800"], ["updated_at", "2023-02-03 00:07:27.530800"]]
+  [1m[36mTRANSACTION (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Quia et maxime ut."], ["content", "Consequatur aut voluptatum. Maiores architecto et. Facilis ut quo."], ["created_at", "2023-02-03 00:07:27.534159"], ["updated_at", "2023-02-03 00:07:27.534159"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Facilis sint et optio."], ["content", "Sint et sequi. Placeat expedita reprehenderit. Qui qui et."], ["created_at", "2023-02-03 00:07:27.537249"], ["updated_at", "2023-02-03 00:07:27.537249"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Beatae dolor ratione qui."], ["content", "Ut nemo autem. Quia et id. Id doloribus maxime."], ["created_at", "2023-02-03 00:07:27.540518"], ["updated_at", "2023-02-03 00:07:27.540518"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Autem et sint enim."], ["content", "Eum accusantium rerum. Dolorum minima nihil. Voluptatibus expedita tenetur."], ["created_at", "2023-02-03 00:07:27.543551"], ["updated_at", "2023-02-03 00:07:27.543551"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Tempora asperiores libero quam."], ["content", "Atque ullam facilis. Non qui incidunt. Occaecati qui dolores."], ["created_at", "2023-02-03 00:07:27.546572"], ["updated_at", "2023-02-03 00:07:27.546572"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Consequatur ea suscipit mollitia."], ["content", "Omnis incidunt in. Nihil ipsam est. Doloremque temporibus assumenda."], ["created_at", "2023-02-03 00:07:27.549467"], ["updated_at", "2023-02-03 00:07:27.549467"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Delectus occaecati eaque tempore."], ["content", "Laborum aut tempora. Quo quis distinctio. Facere quo id."], ["created_at", "2023-02-03 00:07:27.552691"], ["updated_at", "2023-02-03 00:07:27.552691"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Non sed ab placeat."], ["content", "Saepe et quia. Eum aperiam fugit. Aperiam libero ut."], ["created_at", "2023-02-03 00:07:27.555820"], ["updated_at", "2023-02-03 00:07:27.555820"]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.2ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Incidunt quia quas natus."], ["content", "Officia nesciunt iure. Consequatur corporis et. Quo necessitatibus perferendis."], ["created_at", "2023-02-03 00:07:27.558611"], ["updated_at", "2023-02-03 00:07:27.558611"]]
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mIssue Create (0.3ms)[0m  [1m[32mINSERT INTO "issues" ("title", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Perferendis sint non nobis."], ["content", "Ipsam voluptatum dolorem. Eos assumenda iure. Quam amet consequatur."], ["created_at", "2023-02-03 00:07:27.561429"], ["updated_at", "2023-02-03 00:07:27.561429"]]
+  [1m[36mTRANSACTION (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mIssue Load (0.4ms)[0m  [1m[34mSELECT "issues".* FROM "issues"[0m
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%SEMO%' OR lower(title) LIKE '%SEMO%')[0m
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%a%' OR lower(title) LIKE '%a%')[0m
+Started GET "/" for ::1 at 2023-02-02 18:15:37 -0600
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.8ms | Allocations: 283)
+Started GET "/" for ::1 at 2023-02-02 18:15:37 -0600
+  Rendered shared/_nav.html.erb (Duration: 2.6ms | Allocations: 1963)
+  Rendered layout layouts/application.html.erb (Duration: 129.3ms | Allocations: 38972)
+Completed 200 OK in 139ms (Views: 133.6ms | ActiveRecord: 0.0ms | Allocations: 41990)
+
+
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 9)
+  Rendered shared/_nav.html.erb (Duration: 0.8ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 5.5ms | Allocations: 3954)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms | Allocations: 4278)
+
+
+Started GET "/news/search?query=asdasda+&commit=Search" for ::1 at 2023-02-02 18:15:40 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"asdasda ", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 0.3ms | Allocations: 137)
+  Rendered shared/_nav.html.erb (Duration: 0.7ms | Allocations: 1318)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 4172)
+Completed 200 OK in 7ms (Views: 5.8ms | ActiveRecord: 0.0ms | Allocations: 4939)
+
+
+Started GET "/" for ::1 at 2023-02-02 18:17:00 -0600
+Processing by PagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (Duration: 0.2ms | Allocations: 107)
+  Rendered shared/_nav.html.erb (Duration: 1.0ms | Allocations: 1531)
+  Rendered layout layouts/application.html.erb (Duration: 12.7ms | Allocations: 16064)
+Completed 200 OK in 15ms (Views: 13.9ms | Allocations: 16996)
+
+
+Started GET "/news/search?query=SEMO+&commit=Search" for ::1 at 2023-02-02 18:17:04 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"SEMO ", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%SEMO %' OR lower(title) LIKE '%SEMO %')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 7.2ms | Allocations: 4960)
+  Rendered shared/_nav.html.erb (Duration: 0.8ms | Allocations: 1320)
+  Rendered layout layouts/application.html.erb (Duration: 11.7ms | Allocations: 9016)
+Completed 200 OK in 16ms (Views: 12.1ms | ActiveRecord: 1.0ms | Allocations: 10904)
+
+
+Started GET "/news/search?query=a+&commit=Search" for ::1 at 2023-02-02 18:17:10 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"a ", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%a %' OR lower(title) LIKE '%a %')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1595)
+  Rendered shared/_nav.html.erb (Duration: 0.7ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 6.0ms | Allocations: 5314)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.5ms | Allocations: 5684)
+
+
+Started GET "/news/search?query=John+&commit=Search" for ::1 at 2023-02-02 18:18:53 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"John ", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%John %' OR lower(title) LIKE '%John %')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 1.3ms | Allocations: 565)
+  Rendered shared/_nav.html.erb (Duration: 0.7ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 5.4ms | Allocations: 4288)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.3ms | Allocations: 4613)
+
+
+Started GET "/news/search?query=&commit=Search" for ::1 at 2023-02-02 18:19:38 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (0.5ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%%' OR lower(title) LIKE '%%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 2.2ms | Allocations: 2272)
+  Rendered shared/_nav.html.erb (Duration: 0.8ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 5996)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.5ms | Allocations: 6321)
+
+
+Started GET "/news/search?query=semo&commit=Search" for ::1 at 2023-02-02 18:19:44 -0600
+Processing by News::SearchController#search_feed as HTML
+  Parameters: {"query"=>"semo", "commit"=>"Search"}
+  Rendering layout layouts/application.html.erb
+  Rendering news/search/search_feed.html.erb within layouts/application
+  [1m[36mIssue Load (0.3ms)[0m  [1m[34mSELECT "issues".* FROM "issues" WHERE (lower(content) LIKE '%semo%' OR lower(title) LIKE '%semo%')[0m
+  ↳ app/views/news/search/search_feed.html.erb:3
+  Rendered news/search/search_feed.html.erb within layouts/application (Duration: 1.1ms | Allocations: 586)
+  Rendered shared/_nav.html.erb (Duration: 0.7ms | Allocations: 1290)
+  Rendered layout layouts/application.html.erb (Duration: 5.3ms | Allocations: 4298)
+Completed 200 OK in 6ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 4623)
+
+

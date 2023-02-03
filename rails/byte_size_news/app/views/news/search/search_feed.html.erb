@@ -1,6 +1,6 @@
 <h1>Search Feed</h1>
 
-
-<p>
-  <%= @search %>
-</p>
+<% @issues.each do |issue| %> 
+  <h2><%= issue.title %></h2>
+  <p><%= issue.content %></p>
+<% end %>

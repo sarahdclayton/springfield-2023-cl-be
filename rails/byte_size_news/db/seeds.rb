@@ -10,3 +10,7 @@
 (0..100).each do 
   Issue.create(title: Faker::Lorem.sentence, content: Faker::Lorem.paragraph)
 end
+
+(0..100).each do 
+  User.create(first_name: Faker::FunnyName.name, last_name: Faker::FunnyName.name)
+end
